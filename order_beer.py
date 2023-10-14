@@ -26,7 +26,14 @@ def order_beer():
 
     while True:
         try:
-            quantity = int(input("How many bottles do you want? "))
+            if choice == 1:
+                quantity = int(input("How many bottles of Tusker do you want? "))
+            elif choice == 2:
+                quantity = int(input("How many bottles of Pilsner do you want? "))
+            elif choice == 3:
+                quantity = int(input("How many bottles of Smirnoff do you want? "))
+            else:
+                quantity = int(input("How many White cap of Tusker do you want? "))
             if quantity >= 0:
                 break
             else:
@@ -34,20 +41,19 @@ def order_beer():
         except ValueError:
             print("Invalid input! Please enter a valid quantity (a non-negative number).")
 
-    total_cost = 0
     
     if choice == 1:
         total_cost = quantity * 200
-        print(f"{quantity} bottles of Tusker cost you Ksh {total_cost}")
+        print(f"{quantity} bottles of Tusker will cost you Ksh {total_cost}")
     elif choice == 2:
         total_cost = quantity * 280
-        print(f"{quantity} bottles of Pilsner cost you Ksh {total_cost}")
+        print(f"{quantity} bottles of Pilsner will cost you Ksh {total_cost}")
     elif choice == 3:
         total_cost = quantity * 320
-        print(f"{quantity} bottles of Smirnoff cost you Ksh {total_cost}")
+        print(f"{quantity} bottles of Smirnoff will cost you Ksh {total_cost}")
     else:
         total_cost = quantity * 180
-        print(f"{quantity} bottles of White cap cost you Ksh {total_cost}")
+        print(f"{quantity} bottles of White cap will cost you Ksh {total_cost}")
 
 
 if __name__ == "__main__":
