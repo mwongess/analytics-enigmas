@@ -1,3 +1,19 @@
+# Sample output 
+
+
+# * * * * Jamal and Daughters Pub * * * *
+
+# Beer               Brand Price
+#-------------------------------
+# 1) Tusker          200/=
+# 2) Pilsner         280/=
+# 3) Smirnoff Ice    320/=
+# 4) White Cap       180/=
+
+# Enter your choice: 2
+# How many bottles of pilsner do you want? 11
+# 11 bottles of pilsner will cost you Kshs. 3080
+
 from tabulate import tabulate
 
 def order_beer():
