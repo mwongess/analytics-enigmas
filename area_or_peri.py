@@ -10,14 +10,19 @@ def calc_area_or_peri():
     if choice in [1, 2, 3]:
         if choice == 1:
             # Circle
+            radius = float(input("Please enter radius"))
             area = ""
             perimeter = ""
         elif choice == 2:
             # Rectangle
+            length = float(input("Please enter radius"))
+            width = float(input("Please enter radius"))
             area = ""
             perimeter = ""
         elif choice == 3:
             # Right-angled triangle
+            base = float(input("Please enter radius"))
+            height = float(input("Please enter radius"))
             area = ""
             perimeter = ""
 
