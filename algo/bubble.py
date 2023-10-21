@@ -4,10 +4,9 @@ def bubbleSort(arr):
 	# Traverse through all array elements
 	for i in range(n):
 		swapped = False
-
+		# print("i", arr[i], end=" ")
 		# Last i elements are already in place
 		for j in range(0, n-i-1):
-
 			# Traverse the array from 0 to n-i-1
 			# Swap if the element found is greater
 			# than the next element
